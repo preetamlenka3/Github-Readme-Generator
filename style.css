@@ -22,16 +22,6 @@ textarea {
     margin-top: 10px;
 }
 
-#socialLinks {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.preview {
-    margin-top: 20px;
-}
-
 #livePreview {
     border: 1px solid #ddd;
     padding: 10px;
@@ -40,4 +30,13 @@ textarea {
     max-width: 600px;
     margin: 0 auto;
     overflow-wrap: break-word;
+}
+
+.preview {
+    margin-top: 20px;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
 }
