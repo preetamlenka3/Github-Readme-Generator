@@ -1,12 +1,20 @@
-// Import template data from templates.js
-// Example: const template1 = '...';
+// Import templates from templates.js
+import { template1, template2, template3 } from './templates';
 
 function generateReadme() {
     const username = document.getElementById('username').value;
     const template = document.getElementById('template').value;
 
     // Retrieve the selected template content
-    const selectedTemplate = window[template];
+    let selectedTemplate;
+    if (template === 'template1') {
+        selectedTemplate = template1;
+    } else if (template === 'template2') {
+        selectedTemplate = template2;
+    } else if (template === 'template3') {
+        selectedTemplate = template3;
+    }
+    // Add more conditions for additional templates as needed
 
     // Retrieve social media links
     const twitter = document.getElementById('twitter').value;
@@ -14,9 +22,9 @@ function generateReadme() {
     // Add more social media variables as needed
 
     // Replace placeholders with user input in the selected template
-    let readmeContent = selectedTemplate.replace('{{username}}', username);
-    readmeContent = readmeContent.replace('{{twitter}}', twitter);
-    readmeContent = readmeContent.replace('{{linkedin}}', linkedin);
+    let readmeContent = selectedTemplate.replace(/{{username}}/g, username);
+    readmeContent = readmeContent.replace(/{{twitter}}/g, twitter);
+    readmeContent = readmeContent.replace(/{{linkedin}}/g, linkedin);
     // Replace additional placeholders as needed
 
     // Display the generated content in the textarea
