@@ -1,0 +1,39 @@
+<!-- Add Font Awesome for social media icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- ... (previous code) ... -->
+
+<body>
+    <div class="container">
+        <h1>GitHub Profile README Generator</h1>
+        <label for="username">GitHub Username:</label>
+        <input type="text" id="username" placeholder="Enter your GitHub username">
+
+        <label for="template">Select Template:</label>
+        <select id="template">
+            <option value="template1">Template 1</option>
+            <option value="template2">Template 2</option>
+            <option value="template3">Template 3</option>
+            <!-- Add more template options as needed -->
+        </select>
+
+        <label for="socialLinks">Social Media Links:</label>
+        <div id="socialLinks">
+            <input type="text" placeholder="Twitter" id="twitter">
+            <input type="text" placeholder="LinkedIn" id="linkedin">
+            <!-- Add more social media input fields as needed -->
+        </div>
+
+        <button onclick="generateReadme()">Generate README</button>
+
+        <!-- Live preview of the generated README content -->
+        <div class="preview">
+            <h2>README Preview</h2>
+            <div id="livePreview"></div>
+        </div>
+
+        <textarea id="output" readonly></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
