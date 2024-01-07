@@ -1,5 +1,24 @@
-// Import templates from templates.js
-import { template1, template2, template3 } from 'https://preetamlenka3.github.io/Github-Readme-Generator/templates.js';
+// Templates
+const template1 = `# GitHub Profile README
+
+Hello, I'm {{username}}. Welcome to my GitHub profile!
+
+## About Me
+
+Write a short introduction about yourself.
+
+## Skills
+
+- Skill 1
+- Skill 2
+- Skill 3
+
+## Connect with Me
+
+[![Twitter](https://img.shields.io/badge/Twitter-{{twitter}}-1DA1F2?style=flat-square&logo=twitter&logoColor=white)](https://twitter.com/{{twitter}})
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-{{linkedin}}-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/{{linkedin}})`;
+
+// Add more templates if needed
 
 function generateReadme() {
     const username = document.getElementById('username').value;
@@ -9,23 +28,19 @@ function generateReadme() {
     let selectedTemplate;
     if (template === 'template1') {
         selectedTemplate = template1;
-    } else if (template === 'template2') {
-        selectedTemplate = template2;
-    } else if (template === 'template3') {
-        selectedTemplate = template3;
+    } else {
+        // Add more conditions for additional templates if needed
+        // ...
     }
-    // Add more conditions for additional templates as needed
 
     // Retrieve social media links
     const twitter = document.getElementById('twitter').value;
     const linkedin = document.getElementById('linkedin').value;
-    // Add more social media variables as needed
 
     // Replace placeholders with user input in the selected template
     let readmeContent = selectedTemplate.replace(/{{username}}/g, username);
     readmeContent = readmeContent.replace(/{{twitter}}/g, twitter);
     readmeContent = readmeContent.replace(/{{linkedin}}/g, linkedin);
-    // Replace additional placeholders as needed
 
     // Display the generated content in the textarea
     document.getElementById('output').value = readmeContent;
