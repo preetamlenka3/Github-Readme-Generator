@@ -14,7 +14,7 @@ function generateReadme() {
     const templates = {
         template1: `# GitHub Profile README
 
-Hello, I'm ${username}. Welcome to my GitHub profile!
+Hello 👋, I'm ${username}. Welcome to my GitHub profile!
 
 ## About Me
 
@@ -28,15 +28,24 @@ Write a short introduction about yourself.
 
 ## Connect with Me
 
-[![Twitter](https://img.shields.io/badge/Twitter-${twitter}-1DA1F2?style=flat-square&logo=twitter&logoColor=white)](https://twitter.com/${twitter})
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-${linkedin}-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/${linkedin})
+[![Twitter](https://img.shields.io/badge/Twitter-${twitter}-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/${twitter})
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-${linkedin}-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/${linkedin})
 
 ## Additional Features
 
-${visitorsBadge}
-${profileStatsCard}
-${topSkillsSection}
-${streakStatsCard}`,
+### Visitors Counter Badge
+![Visitors](https://visitor-badge.glitch.me/badge?page_id=${username}.${username}&style=for-the-badge&color=blueviolet) - Keep track of your visitors!
+
+### GitHub Profile Stats Card
+![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&theme=radical&icon_color=blueviolet) - Check out your GitHub stats!
+
+### GitHub Top Skills
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=${username}&layout=compact&theme=vue&hide=html,css&langs_count=6&card_width=300) - Showcase your top programming languages!
+
+### GitHub Streak Stats
+![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=${username}&theme=dark&fire=orange) - Display your GitHub contribution streak!
+
+`,
         // Add more templates as needed
     };
 
