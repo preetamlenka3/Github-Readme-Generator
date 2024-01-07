@@ -50,6 +50,6 @@ Follow these detailed steps to effectively use the GitHub Profile README Generat
 git clone https://github.com/your-username/github-profile-readme-generator.git
 
 ### 2. Navigate to Directory
-
+```bash
 cd github-profile-readme-generator
 
