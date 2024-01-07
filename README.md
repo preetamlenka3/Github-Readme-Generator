@@ -75,6 +75,7 @@ Template Options
 Choose from a selection of pre-designed templates:
 
 Template 1: Classic layout with introduction, skills, and social links.
+
 Template 2: Creative layout focusing on skills and features.
 <!-- Add more templates as needed -->
 Custom Templates
