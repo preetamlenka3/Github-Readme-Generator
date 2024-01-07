@@ -1,5 +1,5 @@
 // Import templates from templates.js
-import { template1, template2, template3 } from 'https://preetamlenka3.github.io/Github-Readme-Generator/templates';
+import { template1, template2, template3 } from 'https://preetamlenka3.github.io/Github-Readme-Generator/templates.js';
 
 function generateReadme() {
     const username = document.getElementById('username').value;
